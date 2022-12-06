@@ -383,18 +383,17 @@ export default class Topbar extends React.Component {
               <li><button type="button" onClick={this.loadPetStoreOas2}>Load Petstore OAS 2.0</button></li>
             </DropdownMenu>
             */}
-            
+            {/*
             <TopbarInsert {...this.props} />
             { showServersMenu ? <DropdownMenu className="long" {...makeMenuOptions("Generate Server")}>
               { this.state.servers
                   .map((serv, i) => <li key={i}><button type="button" onClick={() => this.downloadGeneratedFile("server", serv)}>{serv}</button></li>) }
             </DropdownMenu> : null }
-            {/*
+            */}
             { showClientsMenu ? <DropdownMenu className="long" {...makeMenuOptions("Generate Client")}>
               { this.state.clients
                   .map((cli, i) => <li key={i}><button type="button" onClick={() => this.downloadGeneratedFile("client", cli)}>{cli}</button></li>) }
-            </DropdownMenu> : null }
-            */}
+            </DropdownMenu> : null }            
             {/*
             {AboutMenu && <AboutMenu {...makeMenuOptions("About")} />}
             */}
